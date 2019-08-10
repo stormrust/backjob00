@@ -1,0 +1,19 @@
+[package]
+name = "background-jobs-sled-storage"
+description = "Sled storage backend for background-jobs"
+version = "0.1.3"
+license = "GPL-3.0"
+authors = ["asonix <asonix@asonix.dog>"]
+repository = "https://git.asonix.dog/Aardwolf/background-jobs"
+readme = "README.md"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+background-jobs-core = { version = "0.6", path = "../jobs-core" }
+chrono = "0.4"
+failure = "0.1"
+sled = "0.24"
+serde = "1.0"
+serde_json = "1.0"
